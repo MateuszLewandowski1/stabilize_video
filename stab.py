@@ -4,9 +4,6 @@ import cv2
 import argparse
 
 
-path_to_tsunami = '/home/mateusz/5BiggestTsunamiCaughtOnCamera-Z-2khcTHIgs.mkv'
-
-
 class Stabilize:
 
     """
