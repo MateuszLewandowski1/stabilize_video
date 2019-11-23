@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 import argparse
 
-path_to_video = '/home/mateusz/Downloads/COMPONEER-Direct-Composite-Veneering-System---long-version-BMwoJ_G1Eu4.mp4'
+
 path_to_tsunami = '/home/mateusz/5BiggestTsunamiCaughtOnCamera-Z-2khcTHIgs.mkv'
 
 
@@ -67,9 +67,9 @@ class Stabilize:
 
 
 if __name__ == '__main__':
-    path_to_tsunami = '/home/mateusz/5BiggestTsunamiCaughtOnCamera-Z-2khcTHIgs.mkv'
+    path = '/home/mateusz/5BiggestTsunamiCaughtOnCamera-Z-2khcTHIgs.mkv'
     parser = argparse.ArgumentParser(description="watch only stabilised video or both primary and stabilized video")
     parser.add_argument('one_video', type=int, help='watch only stabilised or both')
     args = parser.parse_args()
-    stab = Stabilize(path_to_tsunami, args.one_video)
+    stab = Stabilize(path, args.one_video)
     stab()
